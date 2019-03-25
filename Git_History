@@ -1,0 +1,132 @@
+    1  apt-get update; apt-get install git -y
+    2  ls
+    3  git clone https://github.com/maghah1/jenkins-adv-acc.git
+    4  ls
+    5  cd *
+    6  \ls
+    7  echo "Hari"|git hash-object --stdin -w
+    8  git cat-file 4c9c66cc43fed314404dd25410a437fab2d8c343 -p
+    9  git add .
+   10  git status
+   11  history > test_history
+   12  git status
+   13  git add .
+   14  git status
+   15  git commit -m "Test commands"
+   16  git push origin master
+   17  git pull
+   18  ls
+   19  ls -lrt
+   20  cat test_history
+   21  ls
+   22  rm -rf test_history
+   23  git status
+   24  git add .
+   25  git status
+   26  git commit -m "Deleting test history file"
+   27  git status
+   28  git push origin master
+   29  ls
+   30  λ vagrant.exe up
+   31  Bringing machine 'master' up with 'virtualbox' provider...
+   32  Bringing machine 'node01' up with 'virtualbox' provider...
+   33  Bringing machine 'node02' up with 'virtualbox' provider...
+   34  ==> master: Importing base box 'ubuntu/xenial64'...
+   35  ==> master: Matching MAC address for NAT networking...
+   36  ==> master: Checking if box 'ubuntu/xenial64' is up to date...
+   37  ==> master: Setting the name of the VM: Administrator_master_1553508979177_66275
+   38  ==> master: Clearing any previously set network interfaces...
+   39  ==> master: Preparing network interfaces based on configuration...
+   40  ==> master: Forwarding ports...
+   41  ==> master: Running 'pre-boot' VM customizations...
+   42  ==> master: Booting VM...
+   43  ==> master: Waiting for machine to boot. This may take a few minutes...
+   44  ==> node01: Machine booted and ready!
+   45  ==> node01: Checking for guest additions in VM...
+   46  ==> node01: Setting hostname...
+   47  ==> node01: Configuring and enabling network interfaces...
+   48  ==> node02: Importing base box 'ubuntu/xenial64'...
+   49  ==> node02: Matching MAC address for NAT networking...
+   50  ==> node02: Checking if box 'ubuntu/xenial64' is up to date...
+   51  ==> node02: Setting the name of the VM: Administrator_node02_1553509177789_90886
+   52  ==> node02: Fixed port collision for 22 => 2222. Now on port 2201.
+   53  ==> node02: Clearing any previously set network interfaces...
+   54  ==> node02: Preparing network interfaces based on configuration...
+   55  ==> node02: Forwarding ports...
+   56  ==> node02: Running 'pre-boot' VM customizations...
+   57  ==> node02: Booting VM...
+   58  ==> node02: Waiting for machine to boot. This may take a few minutes...
+   59  clear
+   60  mkdir -p test/test{01..05}/myfile
+   61  ls
+   62  tree test
+   63  git status 
+   64  git add .
+   65  git status
+   66  ls
+   67  echo "Hello Test" > test/test01/myfile/01
+   68  echo "Hello Test" > test/test02/myfile/02
+   69  echo "Hello Test" > test/test03/myfile/03
+   70  echo "Hello Test" > test/test04/myfile/04
+   71  echo "Hello Test" > test/test05/myfile/05
+   72  tree test
+   73  git add .
+   74  git status
+   75  echo test/test06/myfile06
+   76  echo "Test" > test/myfile06
+   77  echo "Test" > test/myfile07
+   78  git add .
+   79  git status
+   80  vim README.md
+   81  ls
+   82  touch Git_Commands
+   83  mv Git_Commands  /tmp/
+   84  git add . 
+   85  git status 
+   86  git commit -m "Multiple Changes"
+   87  git push origin master
+   88  git revert -m  "Multiple Changes"
+   89  git log
+   90  git checkout 7f2e5a8f9a0ed4fa3c11ea9673b3447843579c0d
+   91  git log
+   92  git pull
+   93  git log
+   94  git pull master
+   95  git pull origin master
+   96  git log
+   97  git checkout -b UAT-Features
+   98  ls
+   99  touch hari.txt
+  100  vi hari.txt
+  101  ls
+  102  git add .
+  103  git commit -m "New Branch"
+  104  ls
+  105  git status
+  106  git log
+  107  git checkout master
+  108  git pull
+  109  git log
+  110  git branch
+  111  ls
+  112  echo "Amit" > amit.txt
+  113  ls
+  114  git checkout 7f2e5a8f9a0ed4fa3c11ea9673b3447843579c0d
+  115  git log
+  116  git pull
+  117  git log
+  118  git pull master
+  119  git log
+  120  git pull origin master 
+  121  git log
+  122  git checkout -b UAT-Features
+  123  git checkout -b UAT-Features2
+  124  rm amit.txt 
+  125  git add . 
+  126  git commit -m "New Branch"
+  127  git add . 
+  128  git commit -m "New Branch"
+  129  git branch
+  130  git push origin UAT-Features2
+  131  ls
+  132  history > Git_History
