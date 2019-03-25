@@ -1,0 +1,11 @@
+    1  apt-get update; apt-get install git -y
+    2  ls
+    3  git clone https://github.com/maghah1/jenkins-adv-acc.git
+    4  ls
+    5  cd *
+    6  \ls
+    7  echo "Hari"|git hash-object --stdin -w
+    8  git cat-file 4c9c66cc43fed314404dd25410a437fab2d8c343 -p
+    9  git add .
+   10  git status
+   11  history > test_history
